@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let ingredientes = [
+            "queso", 
+            "salsa",
+            "masa",
+            "peperoni",
+            "piña",
+            "tomate",
+            "jamon",
+            "aceituna",
+            "huevo",
+            "morron"
+        ] 
+      
+        let pares = [];
+        let impares = [];
+
+        for (let i = 0; i<ingredientes.length; i++){
+            if (ingredientes[i].length % 2 == 0){
+                pares.push(ingredientes[i]);
+            } else {
+                impares.push(ingredientes[i]);
+            }
+        }
+
+        console.log("Los ingredientes pares son: ", pares);
+        console.log("Los ingredientes impares son: ", impares);
+        
+    </script>
+</body>
+</html>
